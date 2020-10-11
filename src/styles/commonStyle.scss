@@ -1,0 +1,74 @@
+/**
+ * 公共样式
+ */
+
+/**
+ * 清除浮动
+ */
+.qui_clear:after {
+  clear: both;
+  content: ".";
+  display: block;
+  line-height: 0;
+  font-size: 0;
+  visibility: hidden;
+}
+
+/**
+ * a链接样式 tabNav_item 
+ */
+.tabNav_item {
+  float: none;
+}
+
+/**
+ * a链接样式 tabNav_item 
+ */
+.tabNav_item_Link {
+  font-size: 14px;
+  display: block;
+  color: #000;
+  background: tranparent;
+  height: 28px;
+  line-height: 28px;
+  padding: 8px 32px;
+  cursor: pointer;
+  padding-right: 0;
+}
+
+/**
+ * 分隔符
+ */
+.frame_operation_separator {
+  height: 10px;
+  width: 8px;
+  color: #8298b4;
+  padding: 0 6px;
+}
+
+// 版本
+.version {
+  color: #9e9e9e;
+  text-align: center;
+  font-size: 12px;
+}
+
+.MsoNormal {
+  mso-margin-top-alt: auto;
+  mso-margin-bottom-alt: auto;
+  text-align: left;
+  mso-pagination: widow-orphan;
+  background: white;
+  margin: 14px 0 6px;
+}
+
+b {
+  font-weight: 700;
+}
+
+.frame_operation_dep {
+  color: #9e9e9e;
+  height: 10px;
+  width: 8px;
+  padding: 0 6px;
+}

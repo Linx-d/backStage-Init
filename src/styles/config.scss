@@ -1,0 +1,33 @@
+/**
+ * 变量设置
+ */
+$transient_time: .5s;// 过渡时间
+$mainBgc: #f0f2f5; // 主体背景色
+
+/**
+ * layout
+ */
+// head
+$layoutHeadHeight: 65px; // 布局头部高度
+
+// nav
+$layoutNavWidth: 257px; // 布局导航宽度
+$navBgc: #001529; // 导航栏背景色
+$navItemColor: #00284d; // 导航栏选项悬浮颜色
+$navItemActiveColor: #1890ff; // 导航栏选项激活颜色
+$navTextActiveColor: #a5acb3; // 导航栏选项文字默认颜色
+$navTextActiveColor: #ffffff; // 导航栏选项选中文字默认颜色
+
+// main
+$layoutMainPadding: 25px; // 布局主体边距
+
+/**
+ * FN
+ */
+@mixin webkit ($type, $value) {
+  -webkit-#{$type}: $value;
+  -moz-#{$type}: $value;
+  -o-#{$type}: $value;
+  -ms-#{$type}: $value;
+  #{$type}: $value;
+}

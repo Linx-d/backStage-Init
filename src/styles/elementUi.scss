@@ -1,0 +1,483 @@
+/**
+ * element-ui 组件全局样式设置
+ */
+.el-table__row {
+  cursor: pointer;
+}
+.el-drawer__body {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+:focus {
+  outline: none;
+}
+
+
+/**
+ * 表格标签 tag
+ */
+.el-tag {
+  background-color: #ecf5ff;
+  display: inline-block;
+  height: 32px;
+  padding: 0 10px;
+  line-height: 30px;
+  font-size: 12px;
+  color: #409eff;
+  border: 1px solid #d9ecff;
+  border-radius: 4px;
+  box-sizing: border-box;
+  white-space: nowrap;
+}
+
+.el-tag.el-tag--success {
+  background-color: #67c23a !important;
+  border-color: #67c23a !important;
+  color: #d7efca !important;
+}
+
+.el-tag.el-tag--primary {
+  background-color: #dfe0e1 !important;
+  border-color: #dfe0e1 !important;
+  color: #919599 !important;
+}
+
+/** dialog
+ *  type: input 带input输入框的表格
+ */
+.universal_dialog {
+  .el-dialog {
+    width: 430px;
+    min-width: 430px;
+    .el-dialog__header,
+    .el-message-box__header {
+      background: #4e79ad;
+      height: 40px;
+      line-height: 40px;
+      padding: 0 0 0 31px;
+      .el-dialog__title,
+      .el-message-box__title {
+        color: #fff;
+        font-size: 13px;
+      }
+      .span {
+        color: #fff;
+        font-size: 13px;
+      }
+      .el-dialog__headerbtn,
+      .el-message-box__headerbtn {
+        color: #fff;
+        top: 12px;
+        right: 20px;
+        .el-dialog__close,
+        .el-message-box__close {
+          color: #fff;
+        }
+      }
+    }
+    .el-dialog__body,
+    .el-message-box__content {
+      padding: 40px 20px 40px 33px;
+      color: #000;
+      font-size: 14px;
+      border-bottom: 1px solid #e4e6e9;
+      .el-form-item {
+        label {
+          width: 68px !important;
+          font-weight: 700;
+        }
+        .el-form-item__content {
+          margin-left: 69px !important;
+          .el-input__inner {
+            width: 294px;
+            height: 26px;
+            border-radius: 0;
+            border: 1px solid #c7c7c7;
+          }
+        }
+      }
+    }
+    .el-dialog__footer,
+    .el-message-box__btns {
+      padding: 12px 20px 12px;
+      text-align: right;
+      box-sizing: border-box;
+      .el-button {
+        width: 50px;
+        height: 26px;
+        font-size: 12px;
+        border-radius: 2px;
+        padding: 0;
+      }
+      .el-button--primary {
+        border-radius: 2px;
+        border-color: #2084ca;
+        color: #fff !important;
+        background-image: -webkit-gradient(
+          linear,
+          left top,
+          left bottom,
+          from(#4490d6),
+          to(#357fb8)
+        );
+        background-image: -webkit-linear-gradient(
+          top,
+          #4490d6 0%,
+          #357fb8 100%
+        );
+        background-image: -o-linear-gradient(top, #4490d6 0%, #357fb8 100%);
+        background-image: linear-gradient(to bottom, #4490d6 0%, #357fb8 100%);
+        background-repeat: repeat-x;
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FF4490D6", endColorstr="#FF357FB8", GradientType=0);
+      }
+      .el-button--primary:hover {
+        background-image: -webkit-gradient(
+          linear,
+          left top,
+          left bottom,
+          from(#61a6e6),
+          to(#4890c7)
+        );
+        background-image: -webkit-linear-gradient(
+          top,
+          #61a6e6 0%,
+          #4890c7 100%
+        );
+        background-image: -o-linear-gradient(top, #61a6e6 0%, #4890c7 100%);
+        background-image: linear-gradient(to bottom, #61a6e6 0%, #4890c7 100%);
+        background-repeat: repeat-x;
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FF61A6E6", endColorstr="#FF4890C7", GradientType=0);
+        border-color: #2971a2;
+        color: #fff;
+      }
+      .el-button--default {
+        color: #222;
+        background-color: #f5f5f5;
+        background-image: -webkit-gradient(
+          linear,
+          left top,
+          left bottom,
+          from(#fff),
+          to(#f8f8f8)
+        );
+        background-image: -webkit-linear-gradient(top, #fff 0%, #f8f8f8 100%);
+        background-image: -o-linear-gradient(top, #fff 0%, #f8f8f8 100%);
+        background-image: linear-gradient(to bottom, #fff 0%, #f8f8f8 100%);
+        background-repeat: repeat-x;
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FFFFFFFF", endColorstr="#FFF8F8F8", GradientType=0);
+        border-radius: 2px;
+        vertical-align: middle;
+        border: 1px solid #aaa;
+      }
+      .el-button--default:hover {
+        border-color: #aaa;
+        background-image: -webkit-gradient(
+          linear,
+          left top,
+          left bottom,
+          from(#f2f2f2),
+          to(#ebebeb)
+        );
+        background-image: -webkit-linear-gradient(
+          top,
+          #f2f2f2 0%,
+          #ebebeb 100%
+        );
+        background-image: -o-linear-gradient(top, #f2f2f2 0%, #ebebeb 100%);
+        background-image: linear-gradient(to bottom, #f2f2f2 0%, #ebebeb 100%);
+        background-repeat: repeat-x;
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FFF2F2F2", endColorstr="#FFEBEBEB", GradientType=0);
+        color: #222;
+        text-decoration: none;
+      }
+    }
+  }
+}
+.el-message-box__wrapper {
+  .el-message-box {
+    padding-bottom: 0;
+    border-radius: 0;
+    border: 0;
+    .el-message-box__header {
+      background: #4e79ad;
+      height: 40px;
+      line-height: 40px;
+      padding: 0 0 0 31px;
+      .el-message-box__title {
+        color: #fff;
+        font-size: 13px;
+        height: 40px;
+        line-height: 40px;
+      }
+      .span {
+        color: #fff;
+        font-size: 13px;
+      }
+      .el-message-box__headerbtn {
+        color: #fff;
+        top: 12px;
+        right: 20px;
+        .el-message-box__close {
+          color: #fff;
+        }
+      }
+    }
+    .el-message-box__content {
+      padding: 40px 20px 40px 33px;
+      color: #000;
+      font-size: 14px;
+      border-bottom: 1px solid #e4e6e9;
+      .el-form-item {
+        label {
+          width: 68px !important;
+          font-weight: 700;
+        }
+        .el-form-item__content {
+          margin-left: 69px !important;
+          .el-input__inner {
+            width: 294px;
+            height: 26px;
+            border-radius: 0;
+            border: 1px solid #c7c7c7;
+          }
+        }
+      }
+    }
+    .el-message-box__btns {
+      padding: 12px 20px 12px;
+      text-align: right;
+      box-sizing: border-box;
+      .el-button {
+        height: 26px;
+        font-size: 12px;
+        border-radius: 2px;
+        padding: 0 15px;
+      }
+      .el-button--primary {
+        border-color: #2084ca !important;
+        color: #fff !important;
+        background-image: -webkit-gradient(
+          linear,
+          left top,
+          left bottom,
+          from(#4490d6),
+          to(#357fb8)
+        ) !important;
+        background-image: -webkit-linear-gradient(
+          top,
+          #4490d6 0%,
+          #357fb8 100%
+        );
+        background-image: -o-linear-gradient(
+          top,
+          #4490d6 0%,
+          #357fb8 100%
+        ) !important;
+        background-image: linear-gradient(
+          to bottom,
+          #4490d6 0%,
+          #357fb8 100%
+        ) !important;
+        background-repeat: repeat-x !important;
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FF4490D6", endColorstr="#FF357FB8", GradientType=0) !important;
+      }
+      .el-button--primary:hover {
+        background-image: -webkit-gradient(
+          linear,
+          left top,
+          left bottom,
+          from(#61a6e6),
+          to(#4890c7)
+        ) !important;
+        background-image: -webkit-linear-gradient(
+          top,
+          #61a6e6 0%,
+          #4890c7 100%
+        ) !important;
+        background-image: -o-linear-gradient(
+          top,
+          #61a6e6 0%,
+          #4890c7 100%
+        ) !important;
+        background-image: linear-gradient(
+          to bottom,
+          #61a6e6 0%,
+          #4890c7 100%
+        ) !important;
+        background-repeat: repeat-x !important;
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FF61A6E6", endColorstr="#FF4890C7", GradientType=0) !important;
+        border-color: #2971a2 !important;
+        color: #fff !important;
+      }
+      .el-button--default {
+        color: #222;
+        background-color: #f5f5f5;
+        background-image: -webkit-gradient(
+          linear,
+          left top,
+          left bottom,
+          from(#fff),
+          to(#f8f8f8)
+        );
+        background-image: -webkit-linear-gradient(top, #fff 0%, #f8f8f8 100%);
+        background-image: -o-linear-gradient(top, #fff 0%, #f8f8f8 100%);
+        background-image: linear-gradient(to bottom, #fff 0%, #f8f8f8 100%);
+        background-repeat: repeat-x;
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FFFFFFFF", endColorstr="#FFF8F8F8", GradientType=0);
+        border-radius: 2px;
+        vertical-align: middle;
+        border: 1px solid #aaa;
+      }
+      .el-button--default:hover {
+        border-color: #aaa;
+        background-image: -webkit-gradient(
+          linear,
+          left top,
+          left bottom,
+          from(#f2f2f2),
+          to(#ebebeb)
+        );
+        background-image: -webkit-linear-gradient(
+          top,
+          #f2f2f2 0%,
+          #ebebeb 100%
+        );
+        background-image: -o-linear-gradient(top, #f2f2f2 0%, #ebebeb 100%);
+        background-image: linear-gradient(to bottom, #f2f2f2 0%, #ebebeb 100%);
+        background-repeat: repeat-x;
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FFF2F2F2", endColorstr="#FFEBEBEB", GradientType=0);
+        color: #222;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+/** dialog
+ * type: table 表格
+ */
+.table_dialog {
+  .el-dialog {
+    width: 800px;
+    .el-dialog__body {
+      padding: 0 20px 50px 25px;
+      .el-table__header-wrapper {
+        .el-table__header {
+          font-size: 14px;
+        }
+      }
+      .el-table__body-wrapper {
+        .el-table__body {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+/** dialog
+ * type: table and input
+ */
+.table_input_dialog {
+  .el-dialog {
+    width: 800px;
+    .el-dialog__body {
+      padding: 15px 31px;
+    }
+  }
+}
+
+.el-button--text {
+  color: #3c87c7;
+}
+
+/** table
+ * 
+ */
+// 表头
+.universal_table_header {
+  th {
+    padding: 5px 0;
+    font-size: 14px;
+  }
+}
+// 行
+.universal_table_row {
+  td {
+    padding: 5px 0;
+    font-size: 15px;
+  }
+}
+// universal_btn primary default 按钮
+.universal_btn {
+  .el-button--primary {
+    border-radius: 2px;
+    border-color: #2084ca;
+    color: #fff !important;
+    background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(#4490d6),
+      to(#357fb8)
+    );
+    background-image: -webkit-linear-gradient(top, #4490d6 0%, #357fb8 100%);
+    background-image: -o-linear-gradient(top, #4490d6 0%, #357fb8 100%);
+    background-image: linear-gradient(to bottom, #4490d6 0%, #357fb8 100%);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FF4490D6", endColorstr="#FF357FB8", GradientType=0);
+  }
+  .el-button--primary:hover {
+    background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(#61a6e6),
+      to(#4890c7)
+    );
+    background-image: -webkit-linear-gradient(top, #61a6e6 0%, #4890c7 100%);
+    background-image: -o-linear-gradient(top, #61a6e6 0%, #4890c7 100%);
+    background-image: linear-gradient(to bottom, #61a6e6 0%, #4890c7 100%);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FF61A6E6", endColorstr="#FF4890C7", GradientType=0);
+    border-color: #2971a2;
+    color: #fff;
+  }
+  .el-button--default {
+    margin-top: -3px;
+    color: #222;
+    background-color: #f5f5f5;
+    background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(#fff),
+      to(#f8f8f8)
+    );
+    background-image: -webkit-linear-gradient(top, #fff 0%, #f8f8f8 100%);
+    background-image: -o-linear-gradient(top, #fff 0%, #f8f8f8 100%);
+    background-image: linear-gradient(to bottom, #fff 0%, #f8f8f8 100%);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FFFFFFFF", endColorstr="#FFF8F8F8", GradientType=0);
+    border-radius: 2px;
+    vertical-align: middle;
+    border: 1px solid #aaa;
+  }
+  .el-button--default:hover {
+    border-color: #aaa;
+    background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(#f2f2f2),
+      to(#ebebeb)
+    );
+    background-image: -webkit-linear-gradient(top, #f2f2f2 0%, #ebebeb 100%);
+    background-image: -o-linear-gradient(top, #f2f2f2 0%, #ebebeb 100%);
+    background-image: linear-gradient(to bottom, #f2f2f2 0%, #ebebeb 100%);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FFF2F2F2", endColorstr="#FFEBEBEB", GradientType=0);
+    color: #222;
+    text-decoration: none;
+  }
+}

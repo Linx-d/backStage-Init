@@ -1,0 +1,10 @@
+/**
+ * scss文件入口
+ */
+
+@import "config.scss"; //scss配置文件
+@import "normalize.scss";// 清除浏览器默认样式
+@import "commonStyle.scss";// 公共样式
+
+// element-ui 组件全局样式设置
+@import "elementUi.scss"; // 统一设置

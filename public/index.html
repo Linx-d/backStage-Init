@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico" />
+    <title>后台管理</title>
+  </head>
+  <body>
+    <noscript>
+      <strong
+        >We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work
+        properly without JavaScript enabled. Please enable it to
+        continue.</strong
+      >
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+    <script>
+      function myBrowser() {
+        let userAgent = navigator.userAgent;
+        let isOpera = userAgent.indexOf("Opera") > -1;
+        if (isOpera) {
+          return "Opera";
+        }
+        if (userAgent.indexOf("Firfox") > -1) {
+          return "Firfox";
+        }
+        if (userAgent.indexOf("Chrome") > -1) {
+          return "Chrome";
+        }
+        if (userAgent.indexOf("Safari") > -1) {
+          return "Safari";
+        }
+        if (
+          userAgent.indexOf("compatible") > -1 &&
+          userAgent.indexOf("MSIE") > -1 &&
+          !isOpera
+        ) {
+          return "IE";
+        }
+        if (userAgent.indexOf("Trident/7.0") > -1) {
+          return "IE";
+        }
+        return userAgent;
+      }
+      let mb = myBrowser();
+      if ("IE" == mb) {
+        alert(
+          "疫情防控中心部分功能暂不支持IE浏览器，请使用Chrome、Safari、Firfox、Samsung Internet、Opera、Edge等浏览器进行访问!"
+        );
+      }
+      console.log("版本号：V0.0");
+    </script>
+  </body>
+</html>
